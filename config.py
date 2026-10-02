@@ -10,20 +10,20 @@ from logging.handlers import RotatingFileHandler
 from os import environ
 
 # ── Required ──────────────────────────────────────────────────────────────────
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID       = int(os.environ.get("APP_ID", ""))
-API_HASH     = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8359090700:AAGHiXKbfaCrAQFfO9OOza8yLW_juzMK2j4")
+APP_ID       = int(os.environ.get("APP_ID", "36428426"))
+API_HASH     = os.environ.get("API_HASH", "30cba30aa38699e77ce264365e327528")
 
 # ── Ownership ─────────────────────────────────────────────────────────────────
-OWNER_ID = int(os.environ.get("OWNER_ID", "7156099919"))
-PORT     = os.environ.get("PORT", "8080")
+OWNER_ID = int(os.environ.get("OWNER_ID", "7957802698"))
+PORT     = os.environ.get("PORT", "8090")
 
 # ── Database ──────────────────────────────────────────────────────────────────
-DB_URI  = os.environ.get("DB_URI", "")
+DB_URI  = os.environ.get("DB_URI", "mongodb+srv://animekyoto:W5Itr6v2bZ3KpQF8@cluster0.trg5dtc.mongodb.net/?appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "botifyx-linkshare")
 
 # ── Database channel (where /genlink stores links) ────────────────────────────
-DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", ""))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1003884550230"))
 
 # ── Auto-approve ──────────────────────────────────────────────────────────────
 id_pattern = re.compile(r"^-?\d+$")
@@ -36,7 +36,7 @@ APPROVED         = environ.get("APPROVED_WELCOME", "on").lower()
 TEXT             = environ.get(
     "APPROVED_WELCOME_TEXT",
     "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\n"
-    "‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @BotifyX_Pro_Botz</b>",
+    "‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @Anime_Kyoto</b>",
 )
 
 # ── Force-Subscribe ───────────────────────────────────────────────────────────
@@ -67,10 +67,10 @@ START_IMG = START_PIC  # alias
 # ── Start & help messages ──────────────────────────────────────────────────────
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <a href='https://t.me/BotifyX_Pro_Botz'>LinkShare Bot</a>.\n"
+    "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <a href='https://t.me/Anime_Kyoto'>Links Share</a>.\n"
     "sʜᴀʀᴇ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs sᴇᴄᴜʀᴇʟʏ ᴡɪᴛʜ ᴛᴇᴍᴘᴏʀᴀʀʏ ɪɴᴠɪᴛᴇs\n"
     "ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\n"
-    "<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/BotifyX_Pro_Botz'>Bᴏᴛɪғʏx ʙᴏᴛs</a></blockquote></b>",
+    "<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Anime_Kyoto'>ᴀɴɪᴍᴇ ᴋʏᴏᴛᴏ</a></blockquote></b>",
 )
 
 HELP = os.environ.get(
